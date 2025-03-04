@@ -207,13 +207,8 @@ map <leader>gs <Action>(ActivateVersionControlToolWindow)
 map <leader>gb <Action>(Git.Branches)
 
 " Errors
-map <leader>en <Action>(ReSharperGotoNextErrorInSolution)
-map <leader>ep <Action>(ReSharperGotoPrevErrorInSolution)
-
-" Down up key
-nmap <leader>j <Action>(MethodDown)
-nmap <leader>k <Action>(MethodUp)
-
+map <leader>en <Action>(GotoNextError)
+map <leader>ep <Action>(GotoPreviousError)
 
 " Key map config
 
@@ -253,7 +248,7 @@ sethandler <C-M> a:vim
 sethandler <C-N> a:vim
 sethandler <C-O> a:vim
 sethandler <C-P> a:vim
-sethandler <C-Q> a:vim
+sethandler <C-Q> a:ide
 sethandler <C-R> a:ide
 sethandler <C-S> a:ide
 sethandler <C-T> a:vim
