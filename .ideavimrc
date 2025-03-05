@@ -31,6 +31,8 @@ set easymotion
 set notimeout
 "set timeout
 "set timeoutlen=300
+set ignorecase
+set smartcase
 
 " Which-key settings
 set which-key
@@ -64,8 +66,8 @@ let g:WhichKeyDesc_df_mode = "<leader>dd Toggle Distraction-Free mode"
 let g:WhichKeyDesc_fullscreen = "<leader>df Toggle full screen"
 
 let g:WhichKeyDesc_action= "<leader>a Actions"
-let g:WhichKeyDesc_action_context_menu = "<leader>am Open context menu"
-let g:WhichKeyDesc_action_search = "<leader>as Open command modal"
+let g:WhichKeyDesc_action_context_menu = "<leader>am Show context menu"
+let g:WhichKeyDesc_action_search = "<leader>as SearchEverywhere"
 
 let g:WhichKeyDesc_file_quickLook = "<leader><leader> Recent files"
 
@@ -100,7 +102,7 @@ let g:WhichKeyDesc_goto_forward = "<leader>gf Go Forward"
 let g:WhichKeyDesc_git = "<leader>g Git operations"
 let g:WhichKeyDesc_git_commit = "<leader>gc Open Git commit dialog"
 let g:WhichKeyDesc_git_status = "<leader>gs Open Git status dialog"
-let g:WhichKeyDesc_git_branches = "<leader>gb Open Git branches list"
+let g:WhichKeyDesc_git_branches = "<leader>gbb Open Git branches list"
 
 let g:WhichKeyDesc_errors = "<leader>e Error navigation"
 let g:WhichKeyDesc_errors_next = "<leader>en Go to next error in solution"
@@ -200,13 +202,13 @@ nmap <leader>gy <Action>(GotoTypeDeclaration)
 nmap <leader>gi <Action>(GotoImplementation)
 nmap <leader>gu <Action>(ShowUsages)
 nmap <leader>gt <Action>(GotoTest)
-nmap <leader>gf <Action>(Back)
-nmap <leader>gb <Action>(Forward)
+nmap <leader>gb <Action>(Back)
+nmap <leader>gf <Action>(Forward)
 
 " Git windows
 map <leader>gc <Action>(CheckinProject)
 map <leader>gs <Action>(ActivateVersionControlToolWindow)
-map <leader>gb <Action>(Git.Branches)
+map <leader>gbb <Action>(Git.Branches)
 
 " Errors
 map <leader>en <Action>(GotoNextError)
