@@ -44,7 +44,6 @@ let g:WhichKeyDesc_leader = "<leader> Leader key"
 let g:WhichKeyDesc_leader = "<leader>x Open file explorer"
 
 let g:WhichKeyDesc_easymotion = "<leader>j Jump with Easymotion"
-let g:WhichKeyDesc_easymotion_prefix = "<leader><leader>"
 
 let g:WhichKeyDesc_comment = "<leader>c Comment line"
 
@@ -72,11 +71,14 @@ let g:WhichKeyDesc_file_quickLook = "<leader><leader> Recent files"
 
 let g:WhichKeyDesc_file_nav = "<leader>f File navigation"
 let g:WhichKeyDesc_file_nav_goto_file = "<leader>ff Go to file"
-let g:WhichKeyDesc_file_nav_goto_content = "<leader>fc Search for file content"
+let g:WhichKeyDesc_file_nav_goto_content = "<leader>fc Find in file"
 let g:WhichKeyDesc_file_nav_show_recent_files = "<leader>fr Show recent files"
 let g:WhichKeyDesc_file_nav_show_recent_locations = "<leader>fl Show recent locations"
 
 let g:WhichKeyDesc_close_tab = "<leader>q Close active tab"
+let g:WhichKeyDesc_close_tab_all = "<leader>qa Close all tabs"
+let g:WhichKeyDesc_close_tab_others = "<leader>qo Close all other tabs"
+let g:WhichKeyDesc_close_tab_reopen = "<leader>qr Reopen closed tab"
 
 let g:WhichKeyDesc_refactoring = "<leader>r Refactoring menu"
 let g:WhichKeyDesc_refactoring_rename = "<leader>rn Rename element"
@@ -108,7 +110,7 @@ let g:WhichKeyDesc_errors_prev = "<leader>ep Go to previous error in solution"
 "" Key mappings
 "" ========================================================
 
-inoremap jj <Esc>
+inoremap jk <Esc>
 
 " Tab navigation
 nnoremap <A-n> :tabnext<CR>
